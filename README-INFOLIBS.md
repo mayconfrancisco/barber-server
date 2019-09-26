@@ -43,3 +43,5 @@ yarn add yup //validators - validar entrada de dados na api - usavamos o JOI com
 yarn add multer //para lidar com upload de arquivo - multipart/form-data
 
 yarn add date-fns@next //lib para lidar com datas - @next para pegar a ultima versao - !!2.0-alpha!!
+
+yarn add mongoose //ODM para mongodb

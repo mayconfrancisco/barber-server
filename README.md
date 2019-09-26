@@ -5,9 +5,13 @@ Backend do App para agendamento em barbearias - Projeto desenvolvido no bootcamp
 
 _Sete as configurações da base de dados no arquivo src/config/database.js_
 
-_OPCIONAL: Para criar uma instância do postgres com o docker em sua máquina_
+_OPCIONAL: Para criar uma instância do **postgres** com o docker em sua máquina_
 
 **docker run --name database-pg -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres**
+
+_OPCIONAL: Para criar uma instância do **mongo** com o docker em sua máquina_
+
+**docker run --name database-mongo -p 27017:27017 -d -t mongo**
 
 _Para baixar as dependências_
 
@@ -20,6 +24,8 @@ _Para iniciar a aplicação_
 ### Sopinha de Letrinhas
 
 **Sequelize** como ORM do App
+
+**Mongoose** como ODM do App
 
 **express e jsonwebtoken** para lidar com requisições HTTP (Rest + JWT)
 
