@@ -45,3 +45,7 @@ yarn add multer //para lidar com upload de arquivo - multipart/form-data
 yarn add date-fns@next //lib para lidar com datas - @next para pegar a ultima versao - !!2.0-alpha!!
 
 yarn add mongoose //ODM para mongodb
+
+yarn add nodemailer //lib para envio de emails
+
+yarn add express-handlebars nodemailer-express-handlebars //Handlebars TemplateEngine - envio de email HTML

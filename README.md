@@ -36,3 +36,7 @@ _Para iniciar a aplicação_
 **multer** para lidar com multipart/form-data
 
 **date-fns** api da datas
+
+**nodemailer** para lidar com envio de emails no Node
+
+**handlebarsjs** TemplateEngine para lidar com envio de emails HTML
