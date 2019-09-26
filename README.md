@@ -1,6 +1,9 @@
 # Barber Server
 Backend do App para agendamento em barbearias - Projeto desenvolvido no bootcamp rocketseat
 
+O projeto utiliza um banco de dados relacional (gosto do postgres), um banco de dados NOSQL para as notificações (Mongo) e o Redis para fila de envio de e-mails
+
+
 ### Para rodar o projeto:
 
 _Sete as configurações da base de dados no arquivo src/config/database.js_
@@ -13,6 +16,10 @@ _OPCIONAL: Para criar uma instância do **mongo** com o docker em sua máquina_
 
 **docker run --name database-mongo -p 27017:27017 -d -t mongo**
 
+_OPCIONAL: Para criar uma instância do **redis** com o docker em sua máquina_
+
+**docker run --name redis -p 6379:6379 -d -t redis:alpine**
+
 _Para baixar as dependências_
 
 **yarn**
@@ -20,6 +27,7 @@ _Para baixar as dependências_
 _Para iniciar a aplicação_
 
 **yarn dev**
+
 
 ### Sopinha de Letrinhas
 
@@ -40,3 +48,5 @@ _Para iniciar a aplicação_
 **nodemailer** para lidar com envio de emails no Node
 
 **handlebarsjs** TemplateEngine para lidar com envio de emails HTML
+
+**bee-queue** para lidar com fila no Node - Alternativa mais performática que o Kue

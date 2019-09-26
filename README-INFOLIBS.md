@@ -49,3 +49,5 @@ yarn add mongoose //ODM para mongodb
 yarn add nodemailer //lib para envio de emails
 
 yarn add express-handlebars nodemailer-express-handlebars //Handlebars TemplateEngine - envio de email HTML
+
+yarn add bee-queue //para lidar com filas - alternativa mais performatica ao KUE, mas que nao possui priorizacao de jobs e outras funcionalidades
