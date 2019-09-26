@@ -58,3 +58,5 @@ yarn add @sentry/node //add SENTRY para monitorar o projeto quando for para outr
 yarn add express-async-error //lib para conseguir capturar os erros dentro dos async/await - Com a lib os erros conseguem ser propagados para um middleware nosso
 
 yarn add youch //formatar as exceptions capturados no exception handler para json - erros mais inteligiveis
+
+yarn add dotenv //adicionar a carga das variaveis ambiente

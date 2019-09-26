@@ -6,7 +6,7 @@ O projeto utiliza um banco de dados relacional (gosto do postgres), um banco de 
 
 ### Para rodar o projeto:
 
-_Sete as configurações da base de dados no arquivo src/config/database.js_
+_Sete todas as configurações da aplicação em um arquivo .env - há um .env.example para servir de base_
 
 _OPCIONAL: Para criar uma instância do **postgres** com o docker em sua máquina_
 
