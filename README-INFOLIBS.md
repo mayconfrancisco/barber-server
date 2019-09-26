@@ -51,3 +51,10 @@ yarn add nodemailer //lib para envio de emails
 yarn add express-handlebars nodemailer-express-handlebars //Handlebars TemplateEngine - envio de email HTML
 
 yarn add bee-queue //para lidar com filas - alternativa mais performatica ao KUE, mas que nao possui priorizacao de jobs e outras funcionalidades
+
+yarn add @sentry/node //add SENTRY para monitorar o projeto quando for para outros ambientes http://sentry.io
+//da para integrar o SENTRY ao Slack, Github... definir os tickets para pessoas da equipe
+
+yarn add express-async-error //lib para conseguir capturar os erros dentro dos async/await - Com a lib os erros conseguem ser propagados para um middleware nosso
+
+yarn add youch //formatar as exceptions capturados no exception handler para json - erros mais inteligiveis
