@@ -1,3 +1,5 @@
+// Sequelize-cli tb utiliza este arquivo - por isso o module/exports - sem sucrase
+
 // require('dotenv').config();
 require('dotenv/config');
 
