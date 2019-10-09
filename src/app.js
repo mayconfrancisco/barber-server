@@ -1,6 +1,7 @@
 import 'dotenv/config';
 
 import express from 'express';
+import cors from 'cors';
 import path from 'path';
 import * as Sentry from '@sentry/node';
 import 'express-async-errors'; // lidar com os erros que ocorrem dentro dos async/await - Deve ser importando antes da Rotas
@@ -25,6 +26,7 @@ class App {
 
   middlewares() {
     this.server.use(Sentry.Handlers.requestHandler());
+    this.server.use(cors());
     this.server.use(express.json());
 
     // serve arquivos estaticos na rota /files do diretorio uploads METHOD: GET

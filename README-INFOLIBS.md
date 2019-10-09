@@ -23,6 +23,8 @@ criar o arquivo .prettierrc com as configuracoes que conflitam com o airbnb
 
 yarn eslint --fix src --ext .js //fara a correcao de todos os arquivo .js da pasta src
 
+yarn add cors
+
 yarn add sequelize
 yarn add sequelize-cli -D
 criar o arquivo .sequelizerc
