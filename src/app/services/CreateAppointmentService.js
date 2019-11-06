@@ -10,6 +10,8 @@ import Appointment from '../models/Appointment';
 
 import Notification from '../schemas/Notifications';
 
+import Cache from '../../lib/Cache';
+
 class CreateAppointmentService {
   async run({ provider_id, user_id, date }) {
     if (provider_id === user_id) {
@@ -70,6 +72,11 @@ class CreateAppointmentService {
       provider_id,
       date,
     });
+
+    /**
+     * Invalidade Cache
+     */
+    await Cache.invalidatePrefix(`user:${user_id}:appointments`);
 
     return appointment;
   }

@@ -63,4 +63,5 @@ yarn add youch //formatar as exceptions capturados no exception handler para jso
 
 yarn add dotenv //adicionar a carga das variaveis ambiente
 
-yarn add ioredis //client redis que ja possui integracao com promise (async/await)
+yarn add ioredis //client redis que ja possui integracao com promise (async/await) <br/>
+// Fazer cache apenas de querys um pouco mais pesadas e que não tenham tanto sensibilidade temporal
