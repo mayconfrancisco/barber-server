@@ -27,7 +27,6 @@ const bruteStore = new BruteRedis({
   host: process.env.REDIS_HOST,
   port: process.env.REDIS_PORT,
 });
-// Ha varias configs de tempo de espera ha ciclo de validacao - CMD Click no Brute e de uma olhada no Options
 const bruteForce = new Brute(bruteStore);
 
 routes.post('/users', validateUserStore, UserController.store);

@@ -68,5 +68,12 @@ yarn add ioredis //client redis que ja possui integracao com promise (async/awai
 
 yarn add express-brute express-brute-redis <br/>
 // Evita ataques por bruteforce - brute vai analisar a quantidade de reqs em uma rota e vai bloquear por um periodo o acesso para aquele client/IP <br/>
-// Salvamos os clients/IPs no redis
+// Salvamos os clients/IPs no redis  <br/>
+// Possui diversas configs - da um CMD + Click na classe Brute e da um olhada nos Options ou consulte a documentacao
+
+yarn add helmet <br/>
+// para configurar - add nos middlewares no express no arquivo /src/app.js <br/>
+// o Helment adiciona varios cabecablos de seguranca para CrosScript, nao permite add sua app como iframe entre outros <br/>
+// De uma olhada na documentacao ou da um CMD + Click no helmet() para verificar as options
+
 
