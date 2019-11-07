@@ -37,6 +37,10 @@ _Para iniciar a aplicação_
 
 **express e jsonwebtoken** para lidar com requisições HTTP (Rest + JWT)
 
+**ioredis** para lidar com Redis e realizar _cache_ para algumas consultas na base de dados
+
+
+
 **bcryptjs** para hash do password do usuário
 
 **YUP** para lidar com as validações das requisições HTTP
