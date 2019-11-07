@@ -66,6 +66,9 @@ yarn add dotenv //adicionar a carga das variaveis ambiente
 yarn add ioredis //client redis que ja possui integracao com promise (async/await) <br/>
 // Fazer cache apenas de querys um pouco mais pesadas e que não tenham tanto sensibilidade temporal
 
+
+
+##### Seguranca
 yarn add express-brute express-brute-redis <br/>
 // Evita ataques por bruteforce - brute vai analisar a quantidade de reqs em uma rota e vai bloquear por um periodo o acesso para aquele client/IP <br/>
 // Salvamos os clients/IPs no redis, eh possivel utilizar outro store, mas redis eh mto performatico <br/>
@@ -82,5 +85,9 @@ yarn add express-rate-limit rate-limit-redis redis <br/>
 // Configurei tudo la no /src/app.js <br/>
 // Sao adicionados headers na requisicao informando qual o limite, quantas reqs restantes ainda existem e qual o timestamp reset para voltar a fazer requisicoes - procure por headers que iniciem com X-RateLimit
 
+Não esqueca de configurar o CORS
 
+Cogite utilizar os Alertas do GITHUB sobre as suas dependencias
+
+Cogite utilizar o servico Greenkeeper para atualizar automaticamente as depencias - Tem a possibilidade de rodar os testes (CI) antes de atualizar
 
