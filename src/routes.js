@@ -1,4 +1,6 @@
 import { Router } from 'express';
+import BruteRedis from 'express-brute-redis';
+import Brute from 'express-brute';
 import multer from 'multer';
 import multerConfig from './config/multer';
 
@@ -21,8 +23,20 @@ import authMiddleware from './app/middlewares/auth';
 const routes = new Router();
 const upload = multer(multerConfig);
 
+const bruteStore = new BruteRedis({
+  host: process.env.REDIS_HOST,
+  port: process.env.REDIS_PORT,
+});
+// Ha varias configs de tempo de espera ha ciclo de validacao - CMD Click no Brute e de uma olhada no Options
+const bruteForce = new Brute(bruteStore);
+
 routes.post('/users', validateUserStore, UserController.store);
-routes.post('/sessions', validateSessionStore, SessionController.store);
+routes.post(
+  '/sessions',
+  bruteForce.prevent,
+  validateSessionStore,
+  SessionController.store
+);
 
 routes.use(authMiddleware);
 
